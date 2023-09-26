@@ -64,7 +64,8 @@ dependencies = [
     "packaging >=23",
     "pandas >=1.1.5, <=1.6",
     "pyhumps >=3.8",
-    "requests >=2.27, <2.29",
+    # https://github.com/MicroStrategy/mstrio-py/issues/154
+    "requests >=2.27",
     "requests_futures >=1.0.0, <1.1",
     "stringcase >=1.2",
     "tqdm >=4.41, <4.70",
@@ -78,8 +79,9 @@ dependencies = [
     "jupyter_core >=4.11.2",
     "lxml >=4.9.1",
     "ipython >=8.10.0, <9",
-    "nbconvert >=7, <8",
-    "mistune >=2.0.4",
+    # https://github.com/MicroStrategy/mstrio-py/issues/155
+    "nbconvert >=6.4.5",
+    "mistune >=0.8.4",
 ]
 
 [project.optional-dependencies]
